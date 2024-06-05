@@ -103,6 +103,7 @@ export async function handleUserSignupPost(req, res) {
 export async function handleUserLoginPost(req, res) {
 
     const { email, password } = req.body;
+    console.log(req.body);
 
     if ([ email, password ].some((field) => field?.trim() === "")) {
         res.status(401)

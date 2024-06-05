@@ -6,7 +6,6 @@ import cors from 'cors';
 import mongoose from "mongoose";
 
 // Database Connections
-// const url='mongodb+srv://admin:admin@stack-overflow-colne.n4gekxe.mongodb.net/?retryWrites=true&w=majority'
 const DATABASE_URL='mongodb+srv://pjapan54:ltyDzctaosoRSR75@japan07.bvevwnu.mongodb.net/?retryWrites=true&w=majority'
 const PORT="27017 ";
 mongoose.connect(DATABASE_URL,{useNewUrlParser:true ,useUnifiedTopology:true})

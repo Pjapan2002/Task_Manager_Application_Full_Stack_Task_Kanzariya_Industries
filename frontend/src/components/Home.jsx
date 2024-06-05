@@ -6,7 +6,7 @@ import TaskItem from './Taskitem.jsx';
 
 import axios from 'axios';
 
-function App() {
+function Home() {
   // define tasks 
   // const [tasks, setTasks] = useState([]);
 
@@ -134,12 +134,13 @@ function App() {
   useEffect(async () => {
     const tasksList = await axios({
       method: 'get',
+      // url: '/',
       url: 'api/v1/tasks',
       responseType: 'json'
     }).then(()=>{
       console.log("successfully getting all the Tasks!");
     }).catch( () => {
-      console.log("Something went wrong!!!");
+      console.log("Something went wrong!!!!!!!!!!!!!");
     })
     setTasks( tasksList && tasksList.data);
   }, []);
@@ -168,7 +169,4 @@ function App() {
   )
 }
 
-export default App
-
-
-
+export default Home
